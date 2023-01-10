@@ -1,24 +1,12 @@
-var num1 = 0-20,
-    num2 = 21-40,
-    num3 = 41-60,
-    name = 'temp';
-
-function multiply() {
-  return num1 * num2;
+function checkTemp(temp) {
+    if (temp <= 20) {
+        return (-1)
+    }
+    else if (temp > 40) {
+        return (1)
+    }
+    else {
+        return (0)
+    }
 }
-
-multiply(); 
-
-function getScore() {
-  var num1 = -1,
-      num2 = 1,
-      num3 = 0;
-  
-  function add() {
-    return name + ' temperature ' + (num1 + num2);
-  }
-
-  return add();
-}
-
-getScore();
+console.log(checkTemp (100));
