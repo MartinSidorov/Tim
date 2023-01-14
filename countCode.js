@@ -15,4 +15,4 @@ console.log(countCode(´i´))
 
 console.log(countCode(´K´))
 
-console.log(countCode(´U´))
+console.log(countCode(´A´))
