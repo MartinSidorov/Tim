@@ -1,18 +1,10 @@
-let countCode = (letter) => {
-  found = 0
-  codeNum = 0
-  while (codeNum < data.length) {
-    if (data[codeNum].startsWish(letter)) {
-      found++
-      //console.log(found)
-    }
-    codeNum++
+function countCode(input) {
+  let count = 0;
+  const regex = /co.e/gi;
+
+  while (regex.exec(input)) {
+    count++;
   }
-  return
+
+  return count;
 }
-
-console.log(countCode(´i´))
-
-console.log(countCode(´K´))
-
-console.log(countCode(´A´))
