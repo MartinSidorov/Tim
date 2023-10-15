@@ -1,12 +1,11 @@
-function checkTemp(temp) {
-    if (temp <= 20) {
-        return (-1)
-    }
-    else if (temp > 40) {
-        return (1)
-    }
-    else {
-        return (0)
+function checkTemp(temperature) {
+    if (temperature >= 0 && temperature <=20) {
+        return -1;
+    } else if (temperature >= 21 && temperature <= 40) {
+        return 0;
+    } else if (temperature >=41 && temperature <= 60) {
+        return 1;
+    }else {
+        return "Temperature out of range";
     }
 }
-console.log(checkTemp (100));
